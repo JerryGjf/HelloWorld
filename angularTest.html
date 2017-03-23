@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>抢红包</title>
+	<link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<script type="text/javascript" src="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<script src="https://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script> 
+<style type="text/css">
+	.form{width: 600px;margin-left: auto; margin-right: auto;}
+</style>
+</head>
+<body>
+<div class="form" ng-app="myApp" ng-controller="myCtrl">
+	<form>
+		<div class="form-control">
+			<label>姓名</label>
+			<input type="text" name="" ng-model="userName">
+		</div>
+		<div class="form-control">
+			<label>电话</label>
+			<input type="text" name="" ng-model="tel">
+		</div>
+		姓名：{{userName}}<br>
+		电话：{{tel}}
+	</form>
+</div>
+<script type="text/javascript">
+
+var app = angular.module('myApp',[]);
+app.controller('myCtrl',function($scope){
+	$scope.userName = '张三';
+	$scope.tel = '132121452';
+});
+
+</script>
+</body>
+</html>
