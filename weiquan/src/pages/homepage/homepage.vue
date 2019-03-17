@@ -194,7 +194,7 @@
         this.focusing = false
       },
       menuClick () {
-        // console.log(this.menuName)
+        console.log(this.menuName)
       }
     }
   }
