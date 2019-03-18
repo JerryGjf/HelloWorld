@@ -1,3 +1,2 @@
 # HelloWorld
-this is my first repository.
-I will write my angularJS test documents.
+这是我的一个测试项目，用来检验平时看到又想验证一番的东西。
