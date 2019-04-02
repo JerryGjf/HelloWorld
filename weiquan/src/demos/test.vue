@@ -26,20 +26,17 @@
       }
     },
     mounted () {
-      // console.log(this.test(this.arr))
-      this.test()
+      this.test(this.arr)
       console.log(this.result)
     },
     methods: {
-      test () {
-        this.arr.forEach(e => {
+      test (arr) {
+        arr.forEach(e => {
           this.result.push(e.id)
           if (Array.isArray(e.children)) {
-            // debugger
             this.test(e.children)
           }
         })
-        // return result
       }
     }
   }
