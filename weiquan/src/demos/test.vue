@@ -1,10 +1,10 @@
 <template>
-  <div @click="test(arr)">test1</div>
+  <div @click="test(arr)">test</div>
 </template>
 
 <script>
   export default {
-    name: 'test1',
+    name: 'test',
     data () {
       return {
         arr: [
